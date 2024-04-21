@@ -5,8 +5,8 @@ from flask_restful import Api, Resource
 import os
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-DATABASE = f"postgresql://austine:bgzkz8jvlCZUQkI1A8Q45JEYmewMqviS@dpg-coigeldjm4es739nlpng-a.oregon-postgres.render.com/austinemain"
-#DATABASE= os.environ.get('DATABASE_URI')
+#DATABASE = f"postgresql://austine:bgzkz8jvlCZUQkI1A8Q45JEYmewMqviS@dpg-coigeldjm4es739nlpng-a.oregon-postgres.render.com/austinemain"
+DATABASE= os.environ.get('DATABASE_URI')
 app = Flask(__name__,
     static_url_path='',
     static_folder='../client/build',
